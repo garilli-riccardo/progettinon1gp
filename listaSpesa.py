@@ -6,3 +6,5 @@ def visualizzaElementi(lista):
     for i in range(len(lista)):
         print(f"{i + 1}. {lista[i]}") #
 
+def rimuoviElementi(lista):
+    lista.pop(x)
