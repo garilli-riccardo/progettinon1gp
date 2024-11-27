@@ -1,16 +1,15 @@
 lista = []
-
 def aggiungiElementi():
     x = input()
     lista.append(x) # l'input va fatto nel main
 
-def visualizzaElementi(lista):
+def visualizzaElementi():
     for i in range(len(lista)):
         print(f"{i + 1}. {lista[i]}") #
 
 def rimuoviElementi():
     x = input()
-    lista.pop(x)
+    lista.pop(x - 1)
 
 def contaElementi():
 
