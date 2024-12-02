@@ -10,15 +10,13 @@
             {% if lista %}
                 <ul>
                     {% for elemento in lista %}
-                        <li>
-                            {{ elemento }}
-                            <form action="/rimuovi/{{ loop.index0 }}" method="post" style="display:inline;"> 
-                                <button type="submit">Rimuovi</button>
-                            </form>
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% else %}
+                    <li>
+                        {{ elemento.elemento }} #COMMENTA ???
+                        <form action="/rimuovi/{{ elemento.id }}" method="post" style="display:inline;">
+                            <button type="submit">Rimuovi</button>
+                        </form>
+                    </li>
+                {% endfor %}
                 <p>La lista è vuota.</p>
             {% endif %}
             <form action="/aggiungi" method="post">
