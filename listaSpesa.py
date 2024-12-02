@@ -1,11 +1,11 @@
 lista = []
 def aggiungiElementi():
     x = input()
-    lista.append(x) # l'input va fatto nel main
+    lista.append(x) 
 
 def visualizzaElementi():
     for i in range(len(lista)):
-        print(f"{i + 1}. {lista[i]}") #
+        print(f"{i + 1}. {lista[i]}") 
 
 def rimuoviElementi():
     x = input()
